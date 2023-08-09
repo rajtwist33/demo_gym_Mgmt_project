@@ -1,0 +1,76 @@
+	* {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+
+	body {
+	    background-color: #000000;
+	}
+
+	.container {
+	    width: 100%;
+	    height: 94vh;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.login {
+	    float: right;
+	    margin-right: 50px;
+	    margin-top: 20px;
+	}
+
+	.login p a {
+	    text-decoration: none;
+	    color: #ffffff;
+	    font-family: Helvetica;
+	    font-size: 17px;
+	    font-weight: 600;
+	    letter-spacing: 2px;
+	}
+
+	.login p a:hover {
+	    color: #D3FE56;
+	    transition: 0.5s;
+	}
+
+	.title {
+	    width: 100%;
+	    text-align: center;
+
+	}
+
+	.name h1 {
+	    font-size: 92px;
+	    color: green;
+	    font-family: Century Gothic;
+	}
+
+	.company p {
+	    text-align: center;
+	    margin-top: 20px;
+	    color: #ffffff;
+	    letter-spacing: 2px;
+	    font-family: Helvetica;
+	}
+
+	/responsive/ @media only screen and (max-width: 650px) {
+	    .login {
+	        margin-right: 4vw;
+	        margin-top: 30px;
+	    }
+
+	    .login p a {
+	        font-size: 14px;
+	    }
+
+	    .name h1 {
+	        font-size: 62px;
+	    }
+
+	    .company p {
+	        font-size: 15px;
+	    }
+	}

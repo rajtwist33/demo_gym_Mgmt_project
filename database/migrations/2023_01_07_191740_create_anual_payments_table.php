@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('anual_payments', function (Blueprint $table) {
+            $table->id(); 
+            $table->string('payment_name');
+            $table->string('set_amount');
+            $table->string('no_month');
+            $table->string('total_amount');
+            $table->string('monthly_amount');
+            $table->string('discount');
+            $table->string('slug');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('anual_payments');
+    }
+};

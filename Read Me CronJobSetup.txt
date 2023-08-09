@@ -1,0 +1,6 @@
+ Note for Cron job implemention in FreeStyle GYm
+
+1) DailyRunforpaymenttypecron => Set cron job for every day night at 1 pm.
+2) Group Discount =>set cronjob for every month on some date.
+3) Offer Discount =>set cronjob for every month on some date.
+4) Anual Payment =>set cronjob for every month on some date.
